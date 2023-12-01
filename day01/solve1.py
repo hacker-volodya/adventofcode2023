@@ -1,0 +1,1 @@
+import re; print(sum([int(a + b) for (a, *_, b) in [re.findall("[0-9]", x) * 2 for x in open("input.txt").read().strip().split('\n')]]))

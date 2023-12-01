@@ -1,0 +1,1 @@
+import re; print(sum([int(a + b) for (a, *_, b) in [[i if i.isdigit() else {j:str(k) for k,j in enumerate('one two three four five six seven eight nine'.split(), 1)}[i] for i in re.findall("(?=([0-9]|one|two|three|four|five|six|seven|eight|nine))", x)] * 2 for x in open("input.txt").read().strip().split('\n')]]))

@@ -1,0 +1,1 @@
+The goal is to write python one-liners.
