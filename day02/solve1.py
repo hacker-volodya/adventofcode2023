@@ -1,0 +1,1 @@
+import re; print(sum([v[0] for v in [(lambda x: (int(x[0][0]), [dict([(lambda d: (d[1], int(d[0])))(c.split(' ')) for c in i.split(', ')]) for i in x[0][1].split('; ')]))(re.findall("Game ([0-9]+): (.+)", g)) for g in open("input.txt").read().strip().split("\n")] if all([a.get('red', 0) <= 12 and a.get('green', 0) <= 13 and a.get('blue', 0) <= 14 for a in v[1]])]))

@@ -1,0 +1,1 @@
+import re, math; print(sum([math.prod([max([y.get(f, 0) for y in v[1]]) for f in 'red green blue'.split()]) for v in [(lambda x: (int(x[0][0]), [dict([(lambda d: (d[1], int(d[0])))(c.split(' ')) for c in i.split(', ')]) for i in x[0][1].split('; ')]))(re.findall("Game ([0-9]+): (.+)", g)) for g in open("input.txt").read().strip().split("\n")]]))
